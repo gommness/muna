@@ -178,7 +178,8 @@ move_bounce_solid(true);
             <kind>1</kind>
             <string>///collision con pulso
 intVy=0;
-VelImp = 150/(1+point_distance(other.x,other.y,x,y))
+VelImp = 30/ln(point_distance(other.x,other.y,x,y))
+
 motion_set(point_direction(x,y,other.x,other.y),-VelImp)
 friction=friccion;
 </string>

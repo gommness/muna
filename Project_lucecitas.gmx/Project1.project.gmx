@@ -24,16 +24,12 @@
   <backgrounds name="background"/>
   <paths name="paths"/>
   <objects name="objects">
+    <object>objects\obj_creatorPulso</object>
     <object>objects\obj_light</object>
     <object>objects\obj_lightContainer</object>
+    <object>objects\obj_particleSystem</object>
     <object>objects\obj_player2</object>
     <object>objects\obj_pulse</object>
-    <object>objects\obj_creatorPulso</object>
-    <object>objects\obj_cube</object>
-    <object>objects\obj_hazard</object>
-    <object>objects\obj_intelligentEnemy</object>
-    <object>objects\obj_movHazard</object>
-    <object>objects\obj_ParticleSystem</object>
     <object>objects\obj_triangle1</object>
     <object>objects\obj_triangle2</object>
     <object>objects\obj_triangle3</object>
