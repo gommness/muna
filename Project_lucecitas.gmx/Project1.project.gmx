@@ -51,6 +51,7 @@
     <object>objects\obj_partcorrientes</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\room_suso</room>
     <room>rooms\room0</room>
   </rooms>
   <constants number="1">
