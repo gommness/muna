@@ -4,7 +4,39 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\snd_persecucion</sound>
+    <sound>sound\snd_ambiental_inicio</sound>
+    <sound>sound\snd_cuevaEff</sound>
+    <sound>sound\snd_ambientalPiano</sound>
+    <sound>sound\snd_chorro_burbujas</sound>
+    <sound>sound\snd_ambientalViolin</sound>
+    <sound>sound\snd_minerales</sound>
+    <sound>sound\snd_pulse1</sound>
+    <sound>sound\snd_pulse2</sound>
+    <sound>sound\snd_pulse3</sound>
+    <sound>sound\snd_pulse4</sound>
+    <sound>sound\snd_abierto_rapido</sound>
+    <sound>sound\snd_barreno</sound>
+    <sound>sound\snd_animal</sound>
+    <sound>sound\sound15</sound>
+    <sound>sound\snd_family_NOT</sound>
+    <sound>sound\snd_nacimiento</sound>
+    <sound>sound\snd_intro</sound>
+    <sound>sound\snd_burbujas_largo</sound>
+    <sound>sound\snd_UNA_burbuja</sound>
+    <sound>sound\snd_burbujitas2</sound>
+    <sound>sound\snd_chapoteo1</sound>
+    <sound>sound\snd_chapoteo2</sound>
+    <sound>sound\snd_chapoteo_plural</sound>
+    <sound>sound\snd_medusa_cosquillas</sound>
+    <sound>sound\snd_viscosin1</sound>
+    <sound>sound\snd_visco_chofl</sound>
+    <sound>sound\snd_viscosin2</sound>
+    <sound>sound\snd_happysong</sound>
+    <sound>sound\snd_happiersong</sound>
+    <sound>sound\snd_abierto_triste</sound>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_cube</sprite>
     <sprite>sprites\spr_player1</sprite>

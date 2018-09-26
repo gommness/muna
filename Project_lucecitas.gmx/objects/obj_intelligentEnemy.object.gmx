@@ -28,10 +28,11 @@
             <string>/// Variables
 event_inherited()
 intSpeed = 2;
-intRatioSight = 200;
+intRatioSight = 500;
 tiempo=0;
 NoCol=true;
 path=path_add();
+
 
 </string>
           </argument>
