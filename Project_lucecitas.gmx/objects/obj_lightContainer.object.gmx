@@ -3,7 +3,7 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-999</depth>
+  <depth>0</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -49,11 +49,7 @@ light = surface_create(view_wview,view_hview);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(!surface_exists(light)){    
-    light = surface_create(view_wview,view_hview);
-}
-
-surface_set_target(light);
+            <string>surface_set_target(light);
 draw_set_colour(c_white);
 draw_rectangle(0,0,view_wview,view_hview,false);
 surface_reset_target();
@@ -79,11 +75,9 @@ surface_reset_target();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(surface_exists(light)){
-    draw_set_blend_mode(bm_subtract);
-    draw_surface(light, view_xview,view_yview);
-    draw_set_blend_mode(bm_normal);
-}
+            <string>draw_set_blend_mode(bm_subtract);
+draw_surface(light, view_xview,view_yview);
+draw_set_blend_mode(bm_normal);
 </string>
           </argument>
         </arguments>
