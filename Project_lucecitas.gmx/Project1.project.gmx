@@ -18,6 +18,7 @@
     <sprite>sprites\sprcube</sprite>
     <sprite>sprites\sprite1</sprite>
     <sprite>sprites\spr_bubble</sprite>
+    <sprite>sprites\spr_intelligentEnemy</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -31,6 +32,7 @@
     <object>objects\obj_hazard</object>
     <object>objects\obj_movHazard</object>
     <object>objects\obl_player1</object>
+    <object>objects\obj_intelligentEnemy</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
