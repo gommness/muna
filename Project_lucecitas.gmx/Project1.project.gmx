@@ -8,6 +8,7 @@
   <sprites name="sprites">
     <sprite>sprites\sprite0</sprite>
     <sprite>sprites\sprite1</sprite>
+    <sprite>sprites\sprite2</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -15,6 +16,8 @@
     <object>objects\obj_light</object>
     <object>objects\obl_player1</object>
     <object>objects\obj_player2</object>
+    <object>objects\obj_pulse</object>
+    <object>objects\obj_creatorPulso</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
