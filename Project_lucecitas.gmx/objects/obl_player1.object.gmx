@@ -29,6 +29,7 @@
 intGrav = 0.03;
 intVy = 0;
 alarmaMovVer = 65;
+alarmaFinColision=0.2;
 impulsoAscendente = 0.8;
 CorrSp=10;
 minVel=3;
@@ -85,9 +86,7 @@ alarm[1] = 15 + irandom(40);
           <argument>
             <kind>1</kind>
             <string>///Movimiento Medusa
-if(abs(speed) &lt; minVel){
-    intVy = -impulsoAscendente;
-}
+intVy = -impulsoAscendente;
 alarm[0]=alarmaMovVer;
 </string>
           </argument>
@@ -205,7 +204,7 @@ intVy=0;
 VelImp = 30/ln(point_distance(other.x,other.y,x,y))
 
 motion_set(point_direction(x,y,other.x,other.y),-VelImp)
-friction=FRICCION;
+friction=FRICCION;    
 </string>
           </argument>
         </arguments>

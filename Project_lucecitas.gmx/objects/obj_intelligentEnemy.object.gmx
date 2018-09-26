@@ -26,9 +26,13 @@
           <argument>
             <kind>1</kind>
             <string>/// Variables
-
+event_inherited()
 intSpeed = 2;
 intRatioSight = 200;
+tiempo=0;
+NoCol=true;
+path=path_add();
+
 </string>
           </argument>
         </arguments>
@@ -51,15 +55,38 @@ intRatioSight = 200;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Calcula el path optimo hacia el jugador
-var path;
-path = path_add();
-if (point_distance(x, y, obl_player1.x, obl_player1.y) &lt; intRatioSight) {
-    mp_potential_path_object(path, obl_player1.x, obl_player1.y, intSpeed, 4, all);
-    path_start(path, intSpeed, path_action_stop, true);
-} else {
-    path_end();
+            <string>///colisiones y path
+///colision con enemigo inteligente
+if(NoCol){
+    ObjCol=collision_rectangle(x,y,x+32,y+32,obj_corrientes,true,false);
+    if (ObjCol){
+        tiempo=15;
+        if (path_exists(path)){
+            path_delete(path);
+        }
+        NoCol=false;
+        motion_set(ObjCol.image_angle,CorrSp)
+        friction= FRICCION;
+    }
 }
+if(tiempo &gt; 0){
+    tiempo=tiempo-1;
+}else{
+    /// Calcula el path optimo hacia el jugador
+    NoCol=true;
+    if (point_distance(x, y, obl_player1.x, obl_player1.y) &lt; intRatioSight) { 
+        path = path_add();
+        mp_potential_path_object(path, obl_player1.x, obl_player1.y, intSpeed, 4, obj_cube);
+        path_start(path, intSpeed, path_action_stop, true);
+    } else {
+        path_end();
+    }
+}
+
+
+
+
+
 </string>
           </argument>
         </arguments>
