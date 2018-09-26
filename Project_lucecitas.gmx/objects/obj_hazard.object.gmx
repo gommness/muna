@@ -8,6 +8,30 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
+    <event eventtype="0" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>globalvar touched;
+touched = false;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="4" ename="obl_player1">
       <action>
         <libid>1</libid>
@@ -26,7 +50,15 @@
           <argument>
             <kind>1</kind>
             <string>/// Touching the hazard
-room_restart();
+
+if(global.touched == false){
+    instance_create(0,0,obj_darksquare);
+    other.speed=0;
+    global.touched=true;
+}  
+
+
+
 </string>
           </argument>
         </arguments>
