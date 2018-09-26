@@ -37,7 +37,7 @@ minVel = 3;
 alarm[0]=alarmaMovVer;
 alarm[1] = 15 + irandom(40);
 
-
+instance_create(0,0,obj_lightsquare);
 </string>
           </argument>
         </arguments>

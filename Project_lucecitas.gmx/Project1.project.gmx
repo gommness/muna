@@ -41,6 +41,7 @@
     <object>objects\obl_player1</object>
     <object>objects\obj_shine</object>
     <object>objects\obj_darksquare</object>
+    <object>objects\obj_lightsquare</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
