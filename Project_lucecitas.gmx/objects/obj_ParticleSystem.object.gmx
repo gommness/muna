@@ -25,16 +25,18 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>globalvar part_system;
-global.part_system=part_system_create();
-part_emitter=part_emitter_create(part_system);
-part_type=part_type_create();
-part_type_sprite(part_type, spr_bubble, false, false, false);
-part_type_alpha2(part_type, 0,1);
-part_type_color1(part_type, c_white);
-part_type_life(part_type, room_speed*1.25, room_speed*1.25);
-part_type_scale(part_type, 0.25, 0.25);
-part_type_gravity(part_type, 0.10, 90);
+            <string>globalvar part_system_pj;
+global.part_system_pj=part_system_create();
+globalvar part_emitter_pj;
+part_emitter_pj=part_emitter_create(global.part_system_pj);
+globalvar part_type_pj;
+part_type_pj=part_type_create();
+part_type_sprite(part_type_pj, spr_bubble, false, false, false);
+part_type_alpha2(part_type_pj, 0,1);
+part_type_color1(part_type_pj, c_white);
+part_type_life(part_type_pj, room_speed*1.25, room_speed*1.25);
+part_type_scale(part_type_pj, 0.25, 0.25);
+part_type_gravity(part_type_pj, 0.10, 90);
 </string>
           </argument>
         </arguments>
@@ -57,10 +59,10 @@ part_type_gravity(part_type, 0.10, 90);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>part_emitter_region(part_system, part_emitter, obl_player1.x-16, obl_player1.x+16, obl_player1.y-16, obl_player1.y+16,
+            <string>part_emitter_region(part_system_pj, part_emitter_pj, obl_player1.x-16, obl_player1.x+16, obl_player1.y-16, obl_player1.y+16,
 ps_shape_diamond, ps_distr_invgaussian);
 
-part_emitter_stream(part_system, part_emitter, part_type, -6);
+part_emitter_stream(part_system_pj, part_emitter_pj, part_type_pj, -6);
 </string>
           </argument>
         </arguments>
@@ -84,7 +86,7 @@ part_emitter_stream(part_system, part_emitter, part_type, -6);
           <argument>
             <kind>1</kind>
             <string>///Final particulas
-part_system_destroy(global.part_system);
+part_system_destroy(global.part_system_pj);
 </string>
           </argument>
         </arguments>
