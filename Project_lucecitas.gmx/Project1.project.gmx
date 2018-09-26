@@ -19,10 +19,10 @@
     <sprite>sprites\sprite1</sprite>
     <sprite>sprites\spr_bubble</sprite>
     <sprite>sprites\spr_intelligentEnemy</sprite>
+    <sprite>sprites\spr_light</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
-  <scripts name="scripts"/>
   <objects name="objects">
     <object>objects\obj_creatorPulso</object>
     <object>objects\obj_light</object>
@@ -31,6 +31,17 @@
     <object>objects\obj_player2</object>
     <object>objects\obj_pulse</object>
     <object>objects\obj_creatorPulso</object>
+    <object>objects\obj_cube</object>
+    <object>objects\obj_hazard</object>
+    <object>objects\obj_intelligentEnemy</object>
+    <object>objects\obj_movHazard</object>
+    <object>objects\obj_ParticleSystem</object>
+    <object>objects\obj_triangle1</object>
+    <object>objects\obj_triangle2</object>
+    <object>objects\obj_triangle3</object>
+    <object>objects\obj_triangle4</object>
+    <object>objects\obl_player1</object>
+    <object>objects\obj_shine</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>

@@ -35,8 +35,34 @@ friccion = 0.2
 minVel = 3;
 
 alarm[0]=alarmaMovVer;
+alarm[1] = 15 + irandom(40);
 
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Brillos aleatorios
+instance_create(x, y, obj_shine);
+alarm[1] = 15 + irandom(40);
 </string>
           </argument>
         </arguments>
@@ -86,7 +112,8 @@ alarm[0]=alarmaMovVer;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>size = 600;
+            <string>/// Luz del personaje
+size = 600;
 draw_set_blend_mode(bm_subtract);
 surface_set_target(light);
 draw_ellipse_color(x-size/2-view_xview, y-size/2-view_xview, x+size/2-view_xview, y+size/2-view_xview,c_blue,c_black,false);
