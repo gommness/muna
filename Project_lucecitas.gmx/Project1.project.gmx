@@ -23,6 +23,8 @@
     <sprite>sprites\spr_seaweed</sprite>
     <sprite>sprites\spr_corrientes</sprite>
     <sprite>sprites\spr_pulseparticle</sprite>
+    <sprite>sprites\spr_basura</sprite>
+    <sprite>sprites\spr_changeRoom</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -49,9 +51,11 @@
     <object>objects\obj_changeRoom</object>
     <object>objects\obj_corrientes</object>
     <object>objects\obj_partcorrientes</object>
+    <object>objects\obj_basura</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
+    <room>rooms\room1</room>
   </rooms>
   <constants number="1">
     <constant name="FRICCION">0.2</constant>
