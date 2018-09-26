@@ -6,24 +6,38 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
+    <sprite>sprites\spr_cube</sprite>
     <sprite>sprites\spr_player1</sprite>
-    <sprite>sprites\sprite1</sprite>
     <sprite>sprites\spr_pulse</sprite>
-    <sprite>sprites\sprcube</sprite>
+    <sprite>sprites\spr_triagle2</sprite>
+    <sprite>sprites\spr_triagle3</sprite>
     <sprite>sprites\spr_triangle1</sprite>
+<<<<<<< HEAD
     <sprite>sprites\spr_hazard</sprite>
     <sprite>sprites\spr_movHazard</sprite>
+=======
+    <sprite>sprites\spr_triangle4</sprite>
+    <sprite>sprites\sprcube</sprite>
+    <sprite>sprites\sprite1</sprite>
+    <sprite>sprites\spr_bubble</sprite>
+>>>>>>> 4727aefd316b4a7cd020e02a4bf49f091ae537ec
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <objects name="objects">
+    <object>objects\obj_creatorPulso</object>
     <object>objects\obj_light</object>
-    <object>objects\obl_player1</object>
+    <object>objects\obj_lightContainer</object>
+    <object>objects\obj_particleSystem</object>
     <object>objects\obj_player2</object>
     <object>objects\obj_pulse</object>
+<<<<<<< HEAD
     <object>objects\obj_creatorPulso</object>
     <object>objects\obj_hazard</object>
     <object>objects\obj_movHazard</object>
+=======
+    <object>objects\obl_player1</object>
+>>>>>>> 4727aefd316b4a7cd020e02a4bf49f091ae537ec
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
