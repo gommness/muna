@@ -22,7 +22,6 @@
     <sprite>sprites\spr_light</sprite>
     <sprite>sprites\spr_seaweed</sprite>
     <sprite>sprites\spr_corrientes</sprite>
-    <sprite>sprites\spr_pulseparticle</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
