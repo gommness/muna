@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>globalvar part_system
+            <string>globalvar part_system;
 global.part_system=part_system_create();
 part_emitter=part_emitter_create(part_system);
 part_type=part_type_create();
