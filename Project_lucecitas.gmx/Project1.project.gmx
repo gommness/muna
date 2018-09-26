@@ -11,18 +11,24 @@
     <sprite>sprites\spr_pulse</sprite>
     <sprite>sprites\spr_cube</sprite>
     <sprite>sprites\spr_triangle1</sprite>
-    <sprite>sprites\spr_triagle2</sprite>
-    <sprite>sprites\spr_triagle3</sprite>
+    <sprite>sprites\spr_triangle2</sprite>
+    <sprite>sprites\spr_triangle3</sprite>
     <sprite>sprites\spr_triangle4</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <scripts name="scripts"/>
   <objects name="objects">
     <object>objects\obj_light</object>
     <object>objects\obl_player1</object>
     <object>objects\obj_player2</object>
     <object>objects\obj_pulse</object>
     <object>objects\obj_creatorPulso</object>
+    <object>objects\obj_cube</object>
+    <object>objects\obj_triangle1</object>
+    <object>objects\obj_triangle2</object>
+    <object>objects\obj_triangle3</object>
+    <object>objects\obj_triangle4</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>

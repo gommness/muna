@@ -26,7 +26,6 @@
           <argument>
             <kind>1</kind>
             <string>///Macros
-//aaa
 intGrav = 0.03;
 intVy = 0;
 alarmaMovVer = 65;
@@ -36,6 +35,8 @@ friccion = 0.2
 minVel = 3;
 
 alarm[0]=alarmaMovVer;
+
+
 </string>
           </argument>
         </arguments>
@@ -85,7 +86,7 @@ alarm[0]=alarmaMovVer;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>size = 200;
+            <string>size = 600;
 draw_set_blend_mode(bm_subtract);
 surface_set_target(light);
 draw_ellipse_color(x-size/2-view_xview, y-size/2-view_xview, x+size/2-view_xview, y+size/2-view_xview,c_blue,c_black,false);
@@ -116,6 +117,16 @@ draw_set_blend_mode(bm_normal);
             <string>///movimiento
 intVy += intGrav;
 y +=intVy;
+
+//hace que la instancia rebote con todos los solidos de la room
+if(!place_free(x,y)){
+    y-=intVy;
+    move_contact_solid(270,intVy)
+}
+
+move_bounce_solid(true);
+
+
 </string>
           </argument>
         </arguments>
@@ -139,6 +150,8 @@ y +=intVy;
           <argument>
             <kind>1</kind>
             <string>///collision con pulso
+intVy=0;
+VelImp = 150/(1+point_distance(other.x,other.y,x,y))
 motion_set(point_direction(x,y,other.x,other.y),-VelImp)
 friction=friccion;
 </string>
