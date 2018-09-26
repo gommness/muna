@@ -28,7 +28,7 @@
             <string>part_system=part_system_create();
 part_emitter=part_emitter_create(part_system);
 part_type=part_type_create();
-part_type_sprite(part_type, sp_bubble, false, false, false);
+part_type_sprite(part_type, spr_bubble, false, false, false);
 part_type_alpha2(part_type, 0,1);
 part_type_color1(part_type, c_white);
 part_type_life(part_type, room_speed*1.25, room_speed*1.25);
@@ -56,7 +56,7 @@ part_type_gravity(part_type, 0.10, 90);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>part_emitter_region(part_system, part_emitter, obj_player1.x-16, obj_player1.x+16, obj_player1.y-16, obj_player1.y+16,
+            <string>part_emitter_region(part_system, part_emitter, obl_player1.x-16, obl_player1.x+16, obl_player1.y-16, obl_player1.y+16,
 ps_shape_diamond, ps_distr_invgaussian);
 
 part_emitter_stream(part_system, part_emitter, part_type, -6);
