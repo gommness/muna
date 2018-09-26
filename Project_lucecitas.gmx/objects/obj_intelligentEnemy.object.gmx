@@ -87,6 +87,17 @@ if(tiempo &gt; 0){
 
 
 
+
+if self.x &lt; obl_player1.x
+{
+    self.image_xscale = 1;
+}
+if self.x &gt; obl_player1.x
+{
+    self.image_xscale = -1;
+}
+
+
 </string>
           </argument>
         </arguments>
