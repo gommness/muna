@@ -45,6 +45,7 @@
     <object>objects\obj_lightsquare</object>
     <object>objects\obj_changeRoom</object>
     <object>objects\obj_corrientes</object>
+    <object>objects\obj_partcorrientes</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>

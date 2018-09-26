@@ -8,6 +8,38 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
+    <event eventtype="0" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>globalvar part_system;
+global.part_system=part_system_create();
+part_emitter=part_emitter_create(part_system);
+part_type=part_type_create();
+part_type_sprite(part_type, spr_bubble, false, false, false);
+part_type_alpha2(part_type, 0,1);
+part_type_color1(part_type, c_white);
+part_type_life(part_type, room_speed*1.5, room_speed*1.5);
+part_type_scale(part_type, 0.25, 0.25);
+part_type_gravity(part_type, 0.40, 180);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
@@ -25,10 +57,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///creador de pulso
-if ((mouse_check_button_pressed(mb_left)) &amp;&amp; !collision_point(mouse_x,mouse_y,obl_player1,true,false)){
-   instance_create(mouse_x,mouse_y,obj_pulse)
-}
+            <string>part_emitter_region(part_system, part_emitter, obj_corrientes.x-16, obj_corrientes.x+16, obj_corrientes.y-50, obj_corrientes.y+16,
+ps_shape_diamond, ps_distr_invgaussian);
+
+part_emitter_stream(part_system, part_emitter, part_type, -1);
 </string>
           </argument>
         </arguments>
