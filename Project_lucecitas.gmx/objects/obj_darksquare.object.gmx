@@ -50,7 +50,8 @@ instance_destroy(obj_creatorPulso);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_alpha(global.alfa);
+            <string>///apaga pantalla
+draw_set_alpha(global.alfa);
 draw_rectangle_colour(0,0,view_wview,view_hview, c_black, c_black, c_black, c_black ,false);
 draw_set_alpha(1);
 global.alfa += 0.04;
@@ -59,6 +60,7 @@ if(global.alfa == 1){
     room_restart();
     global.alfa = 0;
 }
+instance_destroy(obj_creatorPulso);
 </string>
           </argument>
         </arguments>
