@@ -75,6 +75,7 @@
     <instance objName="obj_partcorrientes" x="192" y="64" name="inst_392205AD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_partcorrientes" x="192" y="96" name="inst_94B0DA2A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_partcorrientes" x="192" y="128" name="inst_66BD5682" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_intelligentEnemy" x="576" y="96" name="inst_91D10A04" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_basuraBolsa" x="160" y="416" name="inst_53539E4A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_basuraAnillas" x="256" y="448" name="inst_25D21BD6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_basuraAnillas" x="224" y="416" name="inst_C1C88CF6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
