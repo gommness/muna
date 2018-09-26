@@ -26,6 +26,7 @@
     <sprite>sprites\spr_basura</sprite>
     <sprite>sprites\spr_changeRoom</sprite>
     <sprite>sprites\spr_player_move</sprite>
+    <sprite>sprites\spr_friend</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -53,6 +54,7 @@
     <object>objects\obj_corrientes</object>
     <object>objects\obj_partcorrientes</object>
     <object>objects\obj_basura</object>
+    <object>objects\obj_friend</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_suso</room>
