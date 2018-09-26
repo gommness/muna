@@ -25,8 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>globalvar part_system;
-global.part_system=part_system_create();
+            <string>part_system=part_system_create();
 part_emitter=part_emitter_create(part_system);
 part_type=part_type_create();
 part_type_sprite(part_type, spr_bubble, false, false, false);
@@ -34,7 +33,12 @@ part_type_alpha2(part_type, 0,1);
 part_type_color1(part_type, c_white);
 part_type_life(part_type, room_speed*1.5, room_speed*1.5);
 part_type_scale(part_type, 0.25, 0.25);
-part_type_gravity(part_type, 0.40, 180);
+ident = instance_nearest(self.x, self.y, obj_corrientes);
+part_type_gravity(part_type, 0.40, ident.image_angle);
+part_emitter_region(part_system, part_emitter, self.x-16, self.x+16, self.y-30, self.y+50,
+ps_shape_diamond, ps_distr_invgaussian);
+
+part_emitter_stream(part_system, part_emitter, part_type, -1);
 </string>
           </argument>
         </arguments>
@@ -57,10 +61,10 @@ part_type_gravity(part_type, 0.40, 180);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>part_emitter_region(part_system, part_emitter, obj_corrientes.x-16, obj_corrientes.x+16, obj_corrientes.y-50, obj_corrientes.y+16,
+            <string>/*part_emitter_region(part_system, part_emitter, obj_corrientes.x-16, obj_corrientes.x+16, obj_corrientes.y-50, obj_corrientes.y+16,
 ps_shape_diamond, ps_distr_invgaussian);
 
-part_emitter_stream(part_system, part_emitter, part_type, -1);
+part_emitter_stream(part_system, part_emitter, part_type, -1);*/
 </string>
           </argument>
         </arguments>

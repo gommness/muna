@@ -57,7 +57,7 @@ part_type_orientation(part_ring, 0, 360, irandom(360), 0, true );
             <string>///creador de pulso
 if ((mouse_check_button_pressed(mb_left)) &amp;&amp; !collision_point(mouse_x,mouse_y,obl_player1,true,false)){
    instance_create(mouse_x,mouse_y,obj_pulse)
-   part_particles_create(global.part_system, mouse_x, mouse_y, part_ring, 1);
+   part_particles_create(global.part_system_pj, mouse_x, mouse_y, part_ring, 1);
 }
 </string>
           </argument>
