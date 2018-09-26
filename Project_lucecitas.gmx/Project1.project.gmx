@@ -20,6 +20,7 @@
     <sprite>sprites\spr_bubble</sprite>
     <sprite>sprites\spr_intelligentEnemy</sprite>
     <sprite>sprites\spr_light</sprite>
+    <sprite>sprites\spr_corrientes</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -40,10 +41,16 @@
     <object>objects\obj_triangle4</object>
     <object>objects\obl_player1</object>
     <object>objects\obj_shine</object>
+    <object>objects\obj_corrientes</object>
+    <object>objects\obj_changeRoom</object>
+    <object>objects\object18</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
   </rooms>
+  <constants number="1">
+    <constant name="FRICCION">0.2</constant>
+  </constants>
   <help>
     <rtf>help.rtf</rtf>
   </help>

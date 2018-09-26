@@ -30,13 +30,11 @@ intGrav = 0.03;
 intVy = 0;
 alarmaMovVer = 65;
 impulsoAscendente = 0.8;
-VelImp = 10;
-friccion = 0.2
-minVel = 3;
+CorrSp=10;
+minVel=3;
 
 alarm[0]=alarmaMovVer;
 alarm[1] = 15 + irandom(40);
-
 
 </string>
           </argument>
@@ -159,6 +157,31 @@ move_bounce_solid(true);
         </arguments>
       </action>
     </event>
+    <event eventtype="4" ename="obj_corrientes">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///colision corrientes con jugador1
+motion_set(other.image_angle,CorrSp)
+friction= FRICCION;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="4" ename="obj_pulse">
       <action>
         <libid>1</libid>
@@ -181,7 +204,7 @@ intVy=0;
 VelImp = 30/ln(point_distance(other.x,other.y,x,y))
 
 motion_set(point_direction(x,y,other.x,other.y),-VelImp)
-friction=friccion;
+friction=FRICCION;
 </string>
           </argument>
         </arguments>
