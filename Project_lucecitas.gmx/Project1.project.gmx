@@ -26,8 +26,17 @@
     <sprite>sprites\spr_basura</sprite>
     <sprite>sprites\spr_changeRoom</sprite>
     <sprite>sprites\spr_player_move</sprite>
+    <sprite>sprites\spr_bolsa</sprite>
+    <sprite>sprites\spr_anillas</sprite>
+    <sprite>sprites\spr_seaUrchin</sprite>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\bg_seaFloor0</background>
+    <background>background\bg_seaFloor1</background>
+    <background>background\bg_seaFloor2</background>
+    <background>background\bg_tileSetCave</background>
+    <background>background\bg_tilesetSeaFloor</background>
+  </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
     <object>objects\obj_creatorPulso</object>
@@ -53,8 +62,12 @@
     <object>objects\obj_corrientes</object>
     <object>objects\obj_partcorrientes</object>
     <object>objects\obj_basura</object>
+    <object>objects\obj_basuraBolsa</object>
+    <object>objects\obj_basuraAnillas</object>
+    <object>objects\obj_seaUrchin</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\level0</room>
     <room>rooms\room0</room>
     <room>rooms\room1</room>
   </rooms>
