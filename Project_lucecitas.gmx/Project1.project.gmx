@@ -25,6 +25,7 @@
     <sprite>sprites\spr_pulseparticle</sprite>
     <sprite>sprites\spr_basura</sprite>
     <sprite>sprites\spr_changeRoom</sprite>
+    <sprite>sprites\spr_player_move</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
