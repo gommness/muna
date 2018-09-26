@@ -11,6 +11,8 @@
     <sprite>sprites\spr_pulse</sprite>
     <sprite>sprites\sprcube</sprite>
     <sprite>sprites\spr_triangle1</sprite>
+    <sprite>sprites\spr_hazard</sprite>
+    <sprite>sprites\spr_movHazard</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -20,6 +22,8 @@
     <object>objects\obj_player2</object>
     <object>objects\obj_pulse</object>
     <object>objects\obj_creatorPulso</object>
+    <object>objects\obj_hazard</object>
+    <object>objects\obj_movHazard</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
