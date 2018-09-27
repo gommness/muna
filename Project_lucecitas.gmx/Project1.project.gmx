@@ -64,6 +64,7 @@
     <sprite>sprites\spr_anillas</sprite>
     <sprite>sprites\spr_seaUrchin</sprite>
   </sprites>
+  <backgrounds name="background">
     <background>background\bg_seaFloor0</background>
     <background>background\bg_seaFloor1</background>
     <background>background\bg_seaFloor2</background>
