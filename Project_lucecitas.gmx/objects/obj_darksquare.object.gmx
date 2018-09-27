@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>globalvar alfa;
 alfa = 0;
+target = room;
 instance_destroy(obj_creatorPulso);
 audio_stop_sound(snd_persecucion);
 audio_stop_sound(snd_chorro_burbujas);
@@ -54,12 +55,13 @@ audio_stop_sound(snd_chorro_burbujas);
             <kind>1</kind>
             <string>///apaga pantalla
 draw_set_alpha(global.alfa);
-draw_rectangle_colour(0,0,view_wview,view_hview, c_black, c_black, c_black, c_black ,false);
+draw_rectangle_colour(view_xview,view_yview,view_xview+view_wview,view_yview+view_hview, c_black, c_black, c_black, c_black ,false);
 draw_set_alpha(1);
 global.alfa += 0.04;
 if(global.alfa == 1){
     instance_destroy();
-    room_restart();
+    //room_restart();
+    room_goto(target);
     global.alfa = 0;
 }
 
