@@ -92,6 +92,8 @@
     <object>objects\obj_triangle1</object>
     <object>objects\obj_triangle2</object>
     <object>objects\obj_triangle3</object>
+    <object>objects\obj_basuraAnillas</object>
+    <object>objects\obj_basuraBolsa</object>
     <object>objects\obj_triangle4</object>
     <object>objects\obj_friend</object>
     <object>objects\obl_player1</object>
