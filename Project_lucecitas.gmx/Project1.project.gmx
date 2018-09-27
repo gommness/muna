@@ -69,6 +69,11 @@
     <sprite>sprites\spr_decoBubbles</sprite>
     <sprite>sprites\spr_madeBy</sprite>
     <sprite>sprites\spr_logo</sprite>
+    <sprite>sprites\spr_Familia</sprite>
+    <sprite>sprites\spr_popsi</sprite>
+    <sprite>sprites\spr_popsiabollada</sprite>
+    <sprite>sprites\spr_brick</sprite>
+    <sprite>sprites\spr_brickabollado</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_seaFloor0</background>
@@ -117,13 +122,16 @@
     <object>objects\obj_intro</object>
     <object>objects\obj_lightFinal</object>
     <object>objects\obj_seaUrchin</object>
-    <object>objects\obj_end</object>
+    <object>objects\obj_basurapopsi</object>
+    <object>objects\obj_basurapopsiabollada</object>
+    <object>objects\obj_basurabrick</object>
+    <object>objects\obj_basurabrickabollado</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\intro</room>
     <room>rooms\level2</room>
-    <room>rooms\level0</room>
     <room>rooms\level1</room>
+    <room>rooms\intro</room>
+    <room>rooms\level0</room>
     <room>rooms\final</room>
     <room>rooms\parallax_test</room>
     <room>rooms\room_suso</room>

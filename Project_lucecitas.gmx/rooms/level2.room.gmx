@@ -248,6 +248,10 @@
     <instance objName="obj_parallax" x="64" y="304" name="inst_5CCA7C7F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obl_player1" x="48" y="368" name="inst_0958001F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_cube" x="-32" y="304" name="inst_A2E3FE5E" locked="0" code="" scaleX="1" scaleY="3.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_basurapopsiabollada" x="304" y="384" name="inst_CBCAC8E6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_basurapopsiabollada" x="432" y="272" name="inst_8B02FBFE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_basurabrick" x="352" y="320" name="inst_CB4D5439" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_basurabrickabollado" x="464" y="272" name="inst_085D372E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_tilesetSeaFloor" x="576" y="80" w="16" h="16" xo="32" yo="80" id="10000005" name="inst_B9479429" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

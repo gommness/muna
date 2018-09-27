@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>///variables
 event_inherited()
-intGrav = 0.01;
+intGrav = 0.005;
 intVy =0;
 alarmaMovVer = 60;
 i=0;
@@ -59,16 +59,17 @@ minVel=3;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///movimiento basura
-intVy += intGrav;
-y +=intVy;
-//hace que la instancia rebote con todos los solidos de la room
-if(!place_free(x,y)){
-    y-=intVy;
-    move_contact_solid(270,intVy)
+            <string>if(distance_to_object(obl_player1) &lt; 400){
+    ///movimiento basura
+    intVy += intGrav;
+    y +=intVy;
+    //hace que la instancia rebote con todos los solidos de la room
+    if(!place_free(x,y)){
+        y-=intVy;
+        move_contact_solid(270,intVy)
+    }
+    move_bounce_solid(true);
 }
-move_bounce_solid(true);
-
 </string>
           </argument>
         </arguments>
