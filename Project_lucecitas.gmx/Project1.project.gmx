@@ -95,10 +95,12 @@
     <object>objects\obj_corrientes</object>
     <object>objects\obj_partcorrientes</object>
     <object>objects\obj_basura</object>
+    <object>objects\obj_parallax</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
     <room>rooms\room1</room>
+    <room>rooms\parallax_test</room>
   </rooms>
   <constants number="1">
     <constant name="FRICCION">0.2</constant>
