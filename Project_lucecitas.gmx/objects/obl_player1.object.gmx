@@ -34,6 +34,8 @@ impulsoAscendente = 0.8;
 CorrSp=10;
 minVel=3;
 
+
+
 alarm[0]=alarmaMovVer;
 alarm[1] = 15 + irandom(40);
 

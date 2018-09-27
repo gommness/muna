@@ -34,6 +34,9 @@ NoCol=true;
 maxAngle = 30
 path=path_add();
 
+///audio
+snd=audio_play_sound(snd_persecucion,5,true);
+
 
 </string>
           </argument>
@@ -91,7 +94,22 @@ if (self.x &gt; obl_player1.x){
 } else {
     self.image_yscale = 1;
     self.image_angle = point_direction(self.x, self.y, obl_player1.x, obl_player1.y);
+
 }
+
+///audio
+if(abs(self.x-obl_player1.x)&lt;100){
+    audio_sound_gain(snd, 1, 0);}
+else if (abs(self.x-obl_player1.x)&gt;100 and abs(self.x-obl_player1.x)&lt;200){
+    audio_sound_gain(snd, 0.8, 0);}
+else if (abs(self.x-obl_player1.x)&gt;200 and abs(self.x-obl_player1.x)&lt;300){
+    audio_sound_gain(snd, 0.6, 0);}
+else if (abs(self.x-obl_player1.x)&gt;300 and abs(self.x-obl_player1.x)&lt;400){
+    audio_sound_gain(snd, 0.4, 0);}
+else if (abs(self.x-obl_player1.x)&gt;400 and abs(self.x-obl_player1.x)&lt;500){
+    audio_sound_gain(snd, 0.2, 0);}
+else if (abs(self.x-obl_player1.x)&gt;500){
+    audio_sound_gain(snd, 0.001, 0);}
 
 // Cuadrant 1
 /*

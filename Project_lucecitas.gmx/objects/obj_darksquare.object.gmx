@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>globalvar alfa;
 alfa = 0;
+audio_stop_all();
 </string>
           </argument>
         </arguments>

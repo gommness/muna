@@ -35,6 +35,9 @@ part_type_color1(part_type, c_white);
 part_type_life(part_type, room_speed*1.5, room_speed*1.5);
 part_type_scale(part_type, 0.25, 0.25);
 part_type_gravity(part_type, 0.40, 180);
+
+///audio
+snd = audio_play_sound(snd_chorro_burbujas, 6, true);
 </string>
           </argument>
         </arguments>
@@ -61,6 +64,20 @@ part_type_gravity(part_type, 0.40, 180);
 ps_shape_diamond, ps_distr_invgaussian);
 
 part_emitter_stream(part_system, part_emitter, part_type, -1);
+
+///audio
+if(abs(self.x-obl_player1.x)&lt;100){
+    audio_sound_gain(snd, 1, 0);}
+else if (abs(self.x-obl_player1.x)&gt;100 and abs(self.x-obl_player1.x)&lt;200){
+    audio_sound_gain(snd, 0.8, 0);}
+else if (abs(self.x-obl_player1.x)&gt;200 and abs(self.x-obl_player1.x)&lt;300){
+    audio_sound_gain(snd, 0.6, 0);}
+else if (abs(self.x-obl_player1.x)&gt;300 and abs(self.x-obl_player1.x)&lt;400){
+    audio_sound_gain(snd, 0.4, 0);}
+else if (abs(self.x-obl_player1.x)&gt;400 and abs(self.x-obl_player1.x)&lt;500){
+    audio_sound_gain(snd, 0.2, 0);}
+else if (abs(self.x-obl_player1.x)&gt;500){
+    audio_sound_gain(snd, 0.001, 0);}
 </string>
           </argument>
         </arguments>
