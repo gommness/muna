@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>target = room;
+            <string>target = level1;
 </string>
           </argument>
         </arguments>
@@ -48,7 +48,13 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///ir al la room 1
+            <string>audio_stop_all();
+if(room == level0){
+    audio_play_sound(snd_family_NOT, 1, false);
+}
+else if(room == level1){
+    audio_play_sound(snd_family_NOT, 1, false);
+}
 room_goto(target);
 </string>
           </argument>

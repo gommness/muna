@@ -69,6 +69,7 @@
     <sprite>sprites\spr_decoBubbles</sprite>
     <sprite>sprites\spr_madeBy</sprite>
     <sprite>sprites\spr_logo</sprite>
+    <sprite>sprites\spr_Familia</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_seaFloor0</background>
@@ -107,19 +108,28 @@
     <object>objects\obj_basura</object>
     <object>objects\obj_parallax</object>
     <object>objects\obj_badFish1</object>
+    <object>objects\obj_basuraAnillas</object>
+    <object>objects\obj_basuraBolsa</object>
     <object>objects\obj_cristal1</object>
     <object>objects\obj_cristal2</object>
     <object>objects\obj_decoBarrel</object>
     <object>objects\obj_decoBubbles</object>
+    <object>objects\obj_Familia</object>
     <object>objects\obj_intro</object>
+    <object>objects\obj_lightFinal</object>
+    <object>objects\obj_seaUrchin</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\intro</room>
+    <room>rooms\level2</room>
+    <room>rooms\level0</room>
     <room>rooms\level1</room>
-    <room>rooms\room0</room>
-    <room>rooms\room_suso</room>
-    <room>rooms\room1</room>
+    <room>rooms\final</room>
     <room>rooms\parallax_test</room>
+    <room>rooms\room_suso</room>
+    <room>rooms\level_test</room>
+    <room>rooms\room0</room>
+    <room>rooms\room1</room>
     <room>rooms\room3</room>
     <room>rooms\room5</room>
     <room>rooms\room6</room>

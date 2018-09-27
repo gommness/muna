@@ -29,7 +29,8 @@
 alfa = 0;
 target = room;
 instance_destroy(obj_creatorPulso);
-audio_stop_all();
+audio_stop_sound(snd_persecucion);
+audio_stop_sound(snd_chorro_burbujas);
 </string>
           </argument>
         </arguments>
