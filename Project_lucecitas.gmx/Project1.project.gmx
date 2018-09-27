@@ -70,6 +70,7 @@
     <sprite>sprites\spr_madeBy</sprite>
     <sprite>sprites\spr_logo</sprite>
     <sprite>sprites\spr_Familia</sprite>
+    <sprite>sprites\spr_click</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_seaFloor0</background>
@@ -93,8 +94,6 @@
     <object>objects\obj_triangle1</object>
     <object>objects\obj_triangle2</object>
     <object>objects\obj_triangle3</object>
-    <object>objects\obj_basuraAnillas</object>
-    <object>objects\obj_basuraBolsa</object>
     <object>objects\obj_triangle4</object>
     <object>objects\obj_friend</object>
     <object>objects\obl_player1</object>
@@ -118,12 +117,14 @@
     <object>objects\obj_intro</object>
     <object>objects\obj_lightFinal</object>
     <object>objects\obj_seaUrchin</object>
+    <object>objects\object36</object>
+    <object>objects\obj_click</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\intro</room>
-    <room>rooms\level2</room>
     <room>rooms\level0</room>
     <room>rooms\level1</room>
+    <room>rooms\intro</room>
+    <room>rooms\level2</room>
     <room>rooms\final</room>
     <room>rooms\parallax_test</room>
     <room>rooms\room_suso</room>
