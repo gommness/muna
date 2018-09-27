@@ -6,7 +6,7 @@
   <depth>0</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
-  <maskName>&lt;undefined&gt;</maskName>
+  <maskName>spr_player1</maskName>
   <events>
     <event eventtype="0" enumb="0">
       <action>
@@ -151,6 +151,7 @@ if(!place_free(x,y)){
     move_contact_solid(270,intVy)
 }
 
+//set the sprite acording to the right state
 if(alarm[0] &lt; alarmaMovVer/2 &amp;&amp; abs(speed) &lt; minVel ){
     sprite_index = spr_player_move;
     image_speed = 0;
@@ -163,6 +164,13 @@ if(alarm[0] &lt; alarmaMovVer/2 &amp;&amp; abs(speed) &lt; minVel ){
     sprite_index = spr_player1;
     image_speed = 0.1;
 }
+
+//tilts the image according to movement
+if(hspeed &lt;= 0)
+    image_angle = -max(hspeed, -20);
+else
+    image_angle = -min(hspeed, 20);
+    
 
 move_bounce_solid(true);
 
