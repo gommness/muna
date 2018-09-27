@@ -10,7 +10,7 @@
   <persistent>0</persistent>
   <colour>4849664</colour>
   <showcolour>-1</showcolour>
-  <code></code>
+  <code>audio_play_sound(snd_intro, 1, false);</code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
@@ -51,31 +51,30 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="obj_decoBarrel" x="448" y="-192" name="inst_A3244303" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="30"/>
-    <instance objName="obj_decoBarrel" x="160" y="-192" name="inst_8122F0C0" locked="0" code="" scaleX="1" scaleY="1" colour="1694498815" rotation="30"/>
-    <instance objName="obj_decoBarrel" x="704" y="-320" name="inst_A0245311" locked="0" code="" scaleX="1" scaleY="1" colour="1694498815" rotation="30"/>
-    <instance objName="obj_decoBarrel" x="272" y="-464" name="inst_035459B4" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="855638015" rotation="30"/>
-    <instance objName="obj_decoBarrel" x="544" y="-448" name="inst_CE3DF002" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="855638015" rotation="30"/>
-    <instance objName="obj_decoBubbles" x="416" y="-32" name="inst_00215ACF" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="obj_decoBubbles" x="448" y="-48" name="inst_4946FBA7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_decoBubbles" x="528" y="-96" name="inst_ECB7C403" locked="0" code="" scaleX="2.375" scaleY="2.32500004768372" colour="4294967295" rotation="0"/>
-    <instance objName="obj_decoBubbles" x="576" y="-128" name="inst_6734E649" locked="0" code="" scaleX="1.25" scaleY="1.20000004768372" colour="4294967295" rotation="0"/>
-    <instance objName="obj_decoBubbles" x="352" y="-128" name="inst_43D3F878" locked="0" code="" scaleX="1.5" scaleY="1.20000004768372" colour="4294967295" rotation="0"/>
-    <instance objName="obj_decoBubbles" x="288" y="-224" name="inst_D5CF1FFB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_decoBubbles" x="608" y="-144" name="inst_77CC9EE8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_decoBubbles" x="480" y="-64" name="inst_F881B7E5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_decoBubbles" x="384" y="-96" name="inst_F9EDD8A5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_decoBubbles" x="480" y="-336" name="inst_599CFF69" locked="0" code="" scaleX="1.75" scaleY="1.60000002384186" colour="4294967295" rotation="0"/>
-    <instance objName="obj_decoBubbles" x="128" y="-112" name="inst_A05570F5" locked="0" code="" scaleX="1" scaleY="1" colour="1694498815" rotation="0"/>
-    <instance objName="obj_decoBubbles" x="224" y="-160" name="inst_2F9FF7E8" locked="0" code="" scaleX="1" scaleY="1" colour="1694498815" rotation="0"/>
-    <instance objName="obj_decoBubbles" x="176" y="-128" name="inst_39A88850" locked="0" code="" scaleX="1" scaleY="1" colour="1694498815" rotation="0"/>
-    <instance objName="obj_decoBubbles" x="80" y="-208" name="inst_2191B1E3" locked="0" code="" scaleX="1" scaleY="1" colour="1694498815" rotation="0"/>
-    <instance objName="obj_decoBubbles" x="688" y="-240" name="inst_416029EB" locked="0" code="" scaleX="1" scaleY="1" colour="1694498815" rotation="0"/>
-    <instance objName="obj_decoBubbles" x="752" y="-272" name="inst_2D882315" locked="0" code="" scaleX="1" scaleY="1" colour="1694498815" rotation="0"/>
-    <instance objName="obj_decoBubbles" x="640" y="-320" name="inst_89FF11DA" locked="0" code="" scaleX="1" scaleY="1" colour="1694498815" rotation="0"/>
-    <instance objName="obj_decoBubbles" x="272" y="-480" name="inst_44B95F5F" locked="0" code="depth = 100;&#xA;" scaleX="1" scaleY="1" colour="855638015" rotation="0"/>
-    <instance objName="obj_decoBubbles" x="544" y="-480" name="inst_616D3753" locked="0" code="depth = 50;&#xA;" scaleX="1" scaleY="1" colour="855638015" rotation="0"/>
-    <instance objName="obj_intro" x="464" y="288" name="inst_2A3E0639" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_intro" x="448" y="256" name="inst_90EDDD06" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_decoBarrel" x="448" y="-304" name="inst_629133AA" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="30"/>
+    <instance objName="obj_decoBarrel" x="160" y="-160" name="inst_61C9FB7C" locked="0" code="" scaleX="1" scaleY="1" colour="1694498815" rotation="30"/>
+    <instance objName="obj_decoBarrel" x="736" y="-96" name="inst_A5C42641" locked="0" code="" scaleX="1" scaleY="1" colour="1694498815" rotation="30"/>
+    <instance objName="obj_decoBarrel" x="720" y="-384" name="inst_63E3B46F" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="855638015" rotation="30"/>
+    <instance objName="obj_decoBarrel" x="208" y="-448" name="inst_E45ABDF0" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="855638015" rotation="30"/>
+    <instance objName="obj_decoBubbles" x="416" y="-144" name="inst_4796D3CB" locked="0" code="" scaleX="2.25" scaleY="2.20000004768372" colour="4294967295" rotation="0"/>
+    <instance objName="obj_decoBubbles" x="480" y="-176" name="inst_4434F37E" locked="0" code="" scaleX="1.5" scaleY="1.39999997615814" colour="4294967295" rotation="0"/>
+    <instance objName="obj_decoBubbles" x="512" y="-192" name="inst_915A879D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_decoBubbles" x="576" y="-224" name="inst_158986A6" locked="0" code="" scaleX="1.75" scaleY="1.39999997615814" colour="4294967295" rotation="0"/>
+    <instance objName="obj_decoBubbles" x="608" y="-256" name="inst_1A9E173D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_decoBubbles" x="368" y="-224" name="inst_642C6394" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_decoBubbles" x="288" y="-336" name="inst_2B66EF22" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_decoBubbles" x="496" y="-448" name="inst_76DE0D3F" locked="0" code="" scaleX="0.5" scaleY="0.600000023841858" colour="4294967295" rotation="0"/>
+    <instance objName="obj_decoBubbles" x="720" y="-32" name="inst_F323C3BE" locked="0" code="" scaleX="1.25" scaleY="1.20000004768372" colour="1694498815" rotation="0"/>
+    <instance objName="obj_decoBubbles" x="752" y="-32" name="inst_494175BF" locked="0" code="" scaleX="1" scaleY="1" colour="1694498815" rotation="0"/>
+    <instance objName="obj_decoBubbles" x="800" y="-64" name="inst_6ECA4B5F" locked="0" code="" scaleX="1" scaleY="1" colour="1694498815" rotation="0"/>
+    <instance objName="obj_decoBubbles" x="656" y="-112" name="inst_C7B54E1E" locked="0" code="" scaleX="1" scaleY="1" colour="1694498815" rotation="0"/>
+    <instance objName="obj_decoBubbles" x="144" y="-80" name="inst_E93B861F" locked="0" code="" scaleX="1.25" scaleY="1.20000004768372" colour="1694498815" rotation="0"/>
+    <instance objName="obj_decoBubbles" x="176" y="-96" name="inst_727194A1" locked="0" code="" scaleX="1" scaleY="1" colour="1694498815" rotation="0"/>
+    <instance objName="obj_decoBubbles" x="224" y="-128" name="inst_0F82FCD5" locked="0" code="" scaleX="1" scaleY="1" colour="1694498815" rotation="0"/>
+    <instance objName="obj_decoBubbles" x="80" y="-176" name="inst_8ABCAB3C" locked="0" code="" scaleX="1" scaleY="1" colour="1694498815" rotation="0"/>
+    <instance objName="obj_decoBubbles" x="208" y="-464" name="inst_92783D0A" locked="0" code="depth = 100;&#xA;" scaleX="1" scaleY="1" colour="855638015" rotation="0"/>
+    <instance objName="obj_decoBubbles" x="721" y="-400" name="inst_0DC4D1BF" locked="0" code="depth = 100;&#xA;" scaleX="1" scaleY="1" colour="855638015" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

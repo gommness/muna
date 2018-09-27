@@ -54,10 +54,10 @@ audio_play_sound(snd_nacimiento, 1, false);
 alarm[3]= tiempo_nacer
 }
 else if(room== level1){
-alarm[6] = 300 //10segs
+alarm[6] = 240 //10segs
 }
 else if(room==level2){
-alarm[7] = 300 //10segs
+alarm[7] = 240 //10segs
 }
 
 

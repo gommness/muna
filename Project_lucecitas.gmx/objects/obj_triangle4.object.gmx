@@ -2,7 +2,7 @@
 <object>
   <spriteName>spr_triangle4</spriteName>
   <solid>-1</solid>
-  <visible>-1</visible>
+  <visible>0</visible>
   <depth>999999999</depth>
   <persistent>0</persistent>
   <parentName>obj_cube</parentName>

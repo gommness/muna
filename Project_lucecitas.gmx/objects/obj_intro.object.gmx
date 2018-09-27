@@ -50,7 +50,7 @@ alarm[0] = 2;
           <argument>
             <kind>1</kind>
             <string>inst = instance_create(0,0,obj_darksquare);
-inst.target = level1;
+inst.target = level0;
 </string>
           </argument>
         </arguments>
