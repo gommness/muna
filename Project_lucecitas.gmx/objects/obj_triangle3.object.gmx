@@ -3,7 +3,7 @@
   <spriteName>spr_triangle3</spriteName>
   <solid>-1</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>276447231</depth>
   <persistent>0</persistent>
   <parentName>obj_cube</parentName>
   <maskName>&lt;undefined&gt;</maskName>

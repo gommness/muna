@@ -63,7 +63,14 @@
     <sprite>sprites\spr_bolsa</sprite>
     <sprite>sprites\spr_anillas</sprite>
     <sprite>sprites\spr_seaUrchin</sprite>
+    <sprite>sprites\spr_cristal1</sprite>
+    <sprite>sprites\spr_cristal2</sprite>
+    <sprite>sprites\spr_decoBarrel</sprite>
+    <sprite>sprites\spr_decoBubbles</sprite>
+    <sprite>sprites\spr_madeBy</sprite>
+    <sprite>sprites\spr_logo</sprite>
   </sprites>
+  <backgrounds name="background">
     <background>background\bg_seaFloor0</background>
     <background>background\bg_seaFloor1</background>
     <background>background\bg_seaFloor2</background>
@@ -86,6 +93,7 @@
     <object>objects\obj_triangle2</object>
     <object>objects\obj_triangle3</object>
     <object>objects\obj_triangle4</object>
+    <object>objects\obj_friend</object>
     <object>objects\obl_player1</object>
     <object>objects\obj_shine</object>
     <object>objects\obj_seaweed</object>
@@ -96,11 +104,22 @@
     <object>objects\obj_partcorrientes</object>
     <object>objects\obj_basura</object>
     <object>objects\obj_parallax</object>
+    <object>objects\obj_badFish1</object>
+    <object>objects\obj_cristal1</object>
+    <object>objects\obj_cristal2</object>
+    <object>objects\obj_decoBarrel</object>
+    <object>objects\obj_decoBubbles</object>
+    <object>objects\obj_intro</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\intro</room>
+    <room>rooms\level1</room>
     <room>rooms\room0</room>
     <room>rooms\room1</room>
     <room>rooms\parallax_test</room>
+    <room>rooms\room3</room>
+    <room>rooms\room5</room>
+    <room>rooms\room6</room>
   </rooms>
   <constants number="1">
     <constant name="FRICCION">0.2</constant>
