@@ -59,6 +59,7 @@
     <sprite>sprites\spr_changeRoom</sprite>
     <sprite>sprites\spr_player_move</sprite>
     <sprite>sprites\spr_friend</sprite>
+    <sprite>sprites\spr_badFish1</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
