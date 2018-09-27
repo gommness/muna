@@ -59,11 +59,11 @@
     <sprite>sprites\spr_changeRoom</sprite>
     <sprite>sprites\spr_player_move</sprite>
     <sprite>sprites\spr_friend</sprite>
+    <sprite>sprites\spr_badFish1</sprite>
     <sprite>sprites\spr_bolsa</sprite>
     <sprite>sprites\spr_anillas</sprite>
     <sprite>sprites\spr_seaUrchin</sprite>
   </sprites>
-  <backgrounds name="background">
     <background>background\bg_seaFloor0</background>
     <background>background\bg_seaFloor1</background>
     <background>background\bg_seaFloor2</background>
@@ -96,10 +96,13 @@
     <object>objects\obj_corrientes</object>
     <object>objects\obj_partcorrientes</object>
     <object>objects\obj_basura</object>
+    <object>objects\obj_parallax</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
+    <room>rooms\room_suso</room>
     <room>rooms\room1</room>
+    <room>rooms\parallax_test</room>
   </rooms>
   <constants number="1">
     <constant name="FRICCION">0.2</constant>

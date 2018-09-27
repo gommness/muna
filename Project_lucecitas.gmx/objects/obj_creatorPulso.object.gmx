@@ -67,7 +67,7 @@ if ((mouse_check_button_pressed(mb_left)) &amp;&amp; !collision_point(mouse_x,mo
     else 
         audio_play_sound(snd_pulse4, 2, false);
    instance_create(mouse_x,mouse_y,obj_pulse)
-   part_particles_create(global.part_system, mouse_x, mouse_y, part_ring, 1);
+   part_particles_create(global.part_system_pj, mouse_x, mouse_y, part_ring, 1);
 }
 </string>
           </argument>

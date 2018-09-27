@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>///Macros
 intGrav = 0.03;
+intGrav = 0.03;
 intVy = 0;
 alarmaMovVer = 65;
 alarmaFinColision=0.2;
