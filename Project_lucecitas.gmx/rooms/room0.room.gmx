@@ -59,6 +59,7 @@
     <instance objName="obj_triangle2" x="416" y="128" name="inst_76596313" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_triangle2" x="384" y="96" name="inst_2B32E21A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ParticleSystem" x="64" y="0" name="inst_32BD211C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_partcorrientes" x="224" y="288" name="inst_F2D1A331" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_seaweed" x="384" y="64" name="inst_E61CDAE2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_basura" x="800" y="224" name="inst_3BEB5788" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_light" x="64" y="128" name="inst_803D672D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -81,7 +82,8 @@
     <instance objName="obj_friend" x="448" y="224" name="inst_0E39AB60" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_friend" x="608" y="288" name="inst_4CB84C4F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_friend" x="384" y="192" name="inst_951A2628" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Familia" x="0" y="352" name="inst_E1BECE10" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="&lt;undefined&gt;" x="0" y="352" name="inst_E1BECE10" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="&lt;undefined&gt;" x="608" y="288" name="inst_C4664C6E" locked="0" code="" scaleX="3" scaleY="4" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

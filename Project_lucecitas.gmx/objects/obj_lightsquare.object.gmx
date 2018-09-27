@@ -50,7 +50,7 @@ alfa2 = 1;
           <argument>
             <kind>1</kind>
             <string>draw_set_alpha(global.alfa2);
-draw_rectangle_colour(0,0,view_wview,view_hview, c_black, c_black, c_black, c_black ,false);
+draw_rectangle_colour(view_xview,view_yview,view_xview+view_wview,view_yview+view_hview, c_black, c_black, c_black, c_black ,false);
 draw_set_alpha(1);
 global.alfa2 -= 0.04;
 if(global.alfa2 == 0){

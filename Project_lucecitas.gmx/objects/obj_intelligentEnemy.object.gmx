@@ -28,7 +28,7 @@
             <string>/// Variables
 event_inherited()
 intSpeed = 2;
-intRatioSight = 500;
+intRatioSight = 300;
 tiempo=0;
 NoCol=true;
 maxAngle = 30
@@ -61,7 +61,7 @@ snd=audio_play_sound(snd_persecucion,5,true);
           <argument>
             <kind>1</kind>
             <string>///colisiones y path
-///colision con enemigo inteligente
+//colision con enemigo inteligente
 if(NoCol){
     ObjCol=collision_rectangle(x,y,x+32,y+32,obj_corrientes,true,false);
     if (ObjCol){
@@ -77,13 +77,24 @@ if(NoCol){
 if(tiempo &gt; 0){
     tiempo=tiempo-1;
 }else{
-    /// Calcula el path optimo hacia el jugador
+    // Calcula el path optimo hacia el jugador
     NoCol=true;
     if (point_distance(x, y, obl_player1.x, obl_player1.y) &lt; intRatioSight) { 
         path = path_add();
         mp_potential_path_object(path, obl_player1.x, obl_player1.y, intSpeed, 4, obj_cube);
         path_start(path, intSpeed, path_action_stop, true);
+        
+        // Para mirar al enemigo
+        if (self.x &gt; obl_player1.x){
+            self.image_yscale = -1;
+            self.image_angle = point_direction(self.x, self.y, obl_player1.x, obl_player1.y);
+        } else {
+            self.image_yscale = 1;
+            self.image_angle = point_direction(self.x, self.y, obl_player1.x, obl_player1.y);
+        }
     } else {
+        
+        self.image_yscale = 1;
         path_end();
     }
 }
