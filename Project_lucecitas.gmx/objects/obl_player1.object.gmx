@@ -27,7 +27,15 @@
             <kind>1</kind>
             <string>///Macros
 intGrav = 0.03;
+intGrav = 0.03;
 intVy = 0;
+alarmaMovVer = 65;
+alarmaFinColision=0.2;
+impulsoAscendente = 0.8;
+CorrSp=10;
+minVel=3;
+
+alarm[0]=alarmaMovVer;intVy = 0;
 alarmaMovVer = 65;
 alarmaFinColision=0.2;
 impulsoAscendente = 0.8;

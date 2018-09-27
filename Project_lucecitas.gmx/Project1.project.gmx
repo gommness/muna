@@ -55,8 +55,8 @@
     <object>objects\obj_basura</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room_suso</room>
     <room>rooms\room0</room>
+    <room>rooms\room_suso</room>
     <room>rooms\room1</room>
   </rooms>
   <constants number="1">
