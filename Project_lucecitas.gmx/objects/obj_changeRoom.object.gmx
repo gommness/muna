@@ -55,9 +55,6 @@ if(room == level0){
 else if(room == level1){
     audio_play_sound(snd_family_NOT, 1, false);
 }
-else if(room == level2){
-    audio_play_sound(snd_happiersong, 1, false);
-}
 room_goto(target);
 </string>
           </argument>
