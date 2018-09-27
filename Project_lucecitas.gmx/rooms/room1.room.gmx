@@ -68,10 +68,10 @@
     <instance objName="obj_seaweed" x="160" y="288" name="inst_45DC45F7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_basura" x="352" y="96" name="inst_70195246" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_corrientes" x="288" y="320" name="inst_B9ED8626" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
-    <instance objName="obj_partcorrientes" x="160" y="96" name="inst_99C57444" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_shine" x="64" y="256" name="inst_8471546F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ParticleSystem" x="64" y="96" name="inst_4A718C16" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obl_player1" x="32" y="224" name="inst_12C8B56F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_partcorrientes" x="288" y="320" name="inst_E8797E35" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

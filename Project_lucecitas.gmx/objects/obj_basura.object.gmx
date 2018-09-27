@@ -27,7 +27,48 @@
             <kind>1</kind>
             <string>///variables
 event_inherited()
-VelImp=0;
+intGrav = 0.01;
+intVy =0;
+alarmaMovVer = 60;
+i=0;
+
+alarm[0]=alarmaMovVer;
+
+impulsoLateral = 1;
+CorrSp=10;
+minVel=3;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///movimiento basura
+intVy += intGrav;
+y +=intVy;
+//hace que la instancia rebote con todos los solidos de la room
+if(!place_free(x,y)){
+    y-=intVy;
+    move_contact_solid(270,intVy)
+}
+move_bounce_solid(true);
+
 </string>
           </argument>
         </arguments>
@@ -51,9 +92,9 @@ VelImp=0;
           <argument>
             <kind>1</kind>
             <string>///collision basura con pulso
-VelImp = 30/ln(point_distance(other.x,other.y,x,y))
-
-motion_set(point_direction(x,y,other.x,other.y),-VelImp)
+speed=0;
+VelImp = 30/ln(point_distance(other.x,other.y,x,y));
+motion_set(point_direction(x,y,other.x,other.y),-VelImp);
 friction=FRICCION;  
 </string>
           </argument>

@@ -90,6 +90,7 @@
     <object>objects\obj_movHazard</object>
     <object>objects\obj_ParticleSystem</object>
     <object>objects\obj_triangle1</object>
+    <object>objects\obj_friend</object>
     <object>objects\obj_triangle2</object>
     <object>objects\obj_triangle3</object>
     <object>objects\obj_triangle4</object>
@@ -115,6 +116,7 @@
     <room>rooms\intro</room>
     <room>rooms\level1</room>
     <room>rooms\room0</room>
+    <room>rooms\room_suso</room>
     <room>rooms\room1</room>
     <room>rooms\parallax_test</room>
     <room>rooms\room3</room>

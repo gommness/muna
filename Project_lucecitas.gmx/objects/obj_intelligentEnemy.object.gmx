@@ -96,6 +96,9 @@ if(tiempo &gt; 0){
     }
 }
 
+<<<<<<< HEAD
+=======
+>>>>>>> 3c6afdc6a9d17dc64d3b596b74b137ffbce580b8
 </string>
           </argument>
         </arguments>

@@ -29,6 +29,7 @@
 event_inherited();
 intVX = 1;
 intVY = 0;
+angle=image_angle;
 </string>
           </argument>
         </arguments>
@@ -52,8 +53,16 @@ intVY = 0;
           <argument>
             <kind>1</kind>
             <string>/// Movimiento Hazard
-x += intVX;
-y += intVY;
+if(!place_meeting(x+intVX,y+intVY,obj_cube)){
+    x += intVX;
+    y += intVY;
+}else{
+    len = sqr(x^2 + y^2);
+    move_contact_solid(angle,10);
+    angle+=180;
+    intVX =(-1)*intVX;
+    intVY =(-1)*intVY;
+}
 </string>
           </argument>
         </arguments>

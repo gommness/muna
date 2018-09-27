@@ -27,7 +27,10 @@
             <kind>1</kind>
             <string>globalvar alfa;
 alfa = 0;
+<<<<<<< HEAD
 target = room;
+=======
+>>>>>>> 3c6afdc6a9d17dc64d3b596b74b137ffbce580b8
 </string>
           </argument>
         </arguments>
