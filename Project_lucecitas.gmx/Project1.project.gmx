@@ -59,11 +59,11 @@
     <sprite>sprites\spr_changeRoom</sprite>
     <sprite>sprites\spr_player_move</sprite>
     <sprite>sprites\spr_friend</sprite>
+    <sprite>sprites\spr_badFish1</sprite>
     <sprite>sprites\spr_bolsa</sprite>
     <sprite>sprites\spr_anillas</sprite>
     <sprite>sprites\spr_seaUrchin</sprite>
   </sprites>
-  <backgrounds name="background">
     <background>background\bg_seaFloor0</background>
     <background>background\bg_seaFloor1</background>
     <background>background\bg_seaFloor2</background>

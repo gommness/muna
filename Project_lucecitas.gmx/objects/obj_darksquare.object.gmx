@@ -59,7 +59,10 @@ if(global.alfa == 1){
     room_restart();
     global.alfa = 0;
 }
-instance_destroy(obj_creatorPulso);
+
+with(obj_creatorPulso) {
+    instance_destroy();
+}
 </string>
           </argument>
         </arguments>
