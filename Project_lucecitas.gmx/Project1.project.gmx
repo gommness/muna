@@ -59,13 +59,10 @@
     <sprite>sprites\spr_changeRoom</sprite>
     <sprite>sprites\spr_player_move</sprite>
     <sprite>sprites\spr_friend</sprite>
-<<<<<<< HEAD
     <sprite>sprites\spr_badFish1</sprite>
-=======
     <sprite>sprites\spr_bolsa</sprite>
     <sprite>sprites\spr_anillas</sprite>
     <sprite>sprites\spr_seaUrchin</sprite>
->>>>>>> f69fc16deaba27075bb66ff96f323e509bd0a73e
   </sprites>
   <backgrounds name="background">
     <background>background\bg_seaFloor0</background>
@@ -107,6 +104,7 @@
     <room>rooms\room_suso</room>
     <room>rooms\room1</room>
     <room>rooms\parallax_test</room>
+    <room>rooms\Nivel_3</room>
   </rooms>
   <constants number="1">
     <constant name="FRICCION">0.2</constant>
