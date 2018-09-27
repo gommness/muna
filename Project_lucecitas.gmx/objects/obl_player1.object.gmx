@@ -92,7 +92,8 @@ alarm[7] = 240 //10segs
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>audio_play_sound(snd_abierto_triste,1,true)
+            <string>snd_fondo3= audio_play_sound(snd_abierto_triste,1,true)
+audio_sound_gain(snd_fondo3,1,0)
 alarm[5] = irandom(210) + 60
 </string>
           </argument>
@@ -116,7 +117,8 @@ alarm[5] = irandom(210) + 60
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>audio_play_sound(snd_ambientalPiano,1,true)
+            <string>snd_fondo2 = audio_play_sound(snd_ambientalPiano,1,true)
+audio_sound_gain(snd_fondo2,1,0)
 alarm[4] = irandom(750)+450
 </string>
           </argument>
@@ -166,7 +168,8 @@ audio_play_sound(snd_UNA_burbuja,7,false)
           <argument>
             <kind>1</kind>
             <string>alarm[4] = irandom(750)+450
-audio_play_sound(snd_cuevaEff,7,false)
+snd = audio_play_sound(snd_cuevaEff,7,false)
+audio_sound_gain(snd, 0.5, 0);
 </string>
           </argument>
         </arguments>
@@ -190,7 +193,9 @@ audio_play_sound(snd_cuevaEff,7,false)
           <argument>
             <kind>1</kind>
             <string>///musica
-audio_play_sound(snd_ambiental_inicio, 1, true);
+snd_fondo1= audio_play_sound(snd_ambiental_inicio, 1, true);
+audio_sound_gain(snd_fondo1,1,0)
+
 </string>
           </argument>
         </arguments>

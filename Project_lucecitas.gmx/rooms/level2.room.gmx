@@ -3,8 +3,8 @@
   <caption></caption>
   <width>2048</width>
   <height>1024</height>
-  <vsnap>16</vsnap>
-  <hsnap>16</hsnap>
+  <vsnap>4</vsnap>
+  <hsnap>4</hsnap>
   <isometric>0</isometric>
   <speed>30</speed>
   <persistent>0</persistent>
@@ -248,6 +248,15 @@
     <instance objName="obj_parallax" x="64" y="304" name="inst_5CCA7C7F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obl_player1" x="48" y="368" name="inst_0958001F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_cube" x="-32" y="304" name="inst_A2E3FE5E" locked="0" code="" scaleX="1" scaleY="3.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Familia" x="1712" y="784" name="inst_928C35DE" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="obj_friend" x="1680" y="752" name="inst_2F91AEFC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_friend" x="1708" y="744" name="inst_B1D6A41D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_friend" x="1736" y="752" name="inst_CBA2EB20" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_friend" x="1752" y="780" name="inst_98DD13A4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_friend" x="1744" y="808" name="inst_5963C932" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_friend" x="1716" y="824" name="inst_063A0E5E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_friend" x="1672" y="780" name="inst_3FC959DF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_friend" x="1684" y="812" name="inst_22B4FB36" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_tilesetSeaFloor" x="576" y="80" w="16" h="16" xo="32" yo="80" id="10000005" name="inst_B9479429" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

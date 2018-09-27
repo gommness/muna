@@ -69,7 +69,6 @@
     <sprite>sprites\spr_decoBubbles</sprite>
     <sprite>sprites\spr_madeBy</sprite>
     <sprite>sprites\spr_logo</sprite>
-    <sprite>sprites\spr_Familia</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_seaFloor0</background>
@@ -116,6 +115,7 @@
     <object>objects\obj_intro</object>
     <object>objects\obj_lightFinal</object>
     <object>objects\obj_seaUrchin</object>
+    <object>objects\obj_end</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\intro</room>
