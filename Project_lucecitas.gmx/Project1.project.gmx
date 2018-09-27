@@ -63,7 +63,9 @@
     <sprite>sprites\spr_bolsa</sprite>
     <sprite>sprites\spr_anillas</sprite>
     <sprite>sprites\spr_seaUrchin</sprite>
+    <sprite>sprites\spr_Familia</sprite>
   </sprites>
+  <backgrounds name="background">
     <background>background\bg_seaFloor0</background>
     <background>background\bg_seaFloor1</background>
     <background>background\bg_seaFloor2</background>
@@ -97,8 +99,11 @@
     <object>objects\obj_partcorrientes</object>
     <object>objects\obj_basura</object>
     <object>objects\obj_parallax</object>
+    <object>objects\obj_Familia</object>
+    <object>objects\obj_lightFinal</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\level2</room>
     <room>rooms\room0</room>
     <room>rooms\room_suso</room>
     <room>rooms\room1</room>

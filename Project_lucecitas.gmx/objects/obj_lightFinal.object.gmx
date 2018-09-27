@@ -3,7 +3,7 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-1000</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -25,27 +25,16 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>part_system=part_system_create();
-part_emitter=part_emitter_create(part_system);
-part_type=part_type_create();
-part_type_sprite(part_type, spr_bubble, false, false, false);
-part_type_alpha2(part_type, 0,1);
-part_type_color1(part_type, c_white);
-part_type_life(part_type, room_speed*1.5, room_speed*1.5);
-part_type_scale(part_type, 0.25, 0.25);
-ident = instance_nearest(self.x, self.y, obj_corrientes);
-part_emitter_region(part_system, part_emitter, self.x-16, self.x+16, self.y-30, self.y+50,
-ps_shape_diamond, ps_distr_invgaussian);
-part_emitter_stream(part_system, part_emitter, part_type, -1);
-///audio
-snd = audio_play_sound(snd_chorro_burbujas, 6, true);
-part_type_gravity(part_type, 0.40, ident.image_angle);
+            <string>globalvar alfa;
+alfa = 0;
+instance_destroy(obj_creatorPulso);
+audio_stop_all();
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="3" enumb="0">
+    <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -62,34 +51,19 @@ part_type_gravity(part_type, 0.40, ident.image_angle);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/*part_emitter_region(part_system, part_emitter, obj_corrientes.x-16, obj_corrientes.x+16, obj_corrientes.y-50, obj_corrientes.y+16,
-ps_shape_diamond, ps_distr_invgaussian);
-
-part_emitter_stream(part_system, part_emitter, part_type, -1);
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="7" enumb="5">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>
-part_system_destroy(part_system);
+            <string>///dibuja un cuadrado blanco
+draw_set_alpha(global.alfa);
+draw_rectangle_colour(0,0,view_wview,view_hview, c_white, c_white, c_white, c_white ,false);
+draw_set_alpha(1);
+global.alfa += 0.04;
+if(global.alfa == 1){
+    instance_destroy();
+    room_goto(room1);
+    global.alfa = 0;
+}
+with(obj_creatorPulso) {
+    instance_destroy();
+}
 </string>
           </argument>
         </arguments>
