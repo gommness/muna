@@ -90,7 +90,6 @@
     <object>objects\obj_movHazard</object>
     <object>objects\obj_ParticleSystem</object>
     <object>objects\obj_triangle1</object>
-    <object>objects\obj_friend</object>
     <object>objects\obj_triangle2</object>
     <object>objects\obj_triangle3</object>
     <object>objects\obj_triangle4</object>
