@@ -98,7 +98,7 @@
     <instance objName="obj_cube" x="464" y="496" name="inst_50AC4D39" locked="0" code="" scaleX="1.5" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_cube" x="368" y="384" name="inst_B1489085" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_triangle4" x="400" y="384" name="inst_63267433" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obl_player1" x="1072" y="912" name="inst_AB8ED078" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obl_player1" x="1088" y="880" name="inst_AB8ED078" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_creatorPulso" x="560" y="32" name="inst_35A45387" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_light" x="576" y="32" name="inst_36FBAE3D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ParticleSystem" x="592" y="32" name="inst_3C2BE69A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -113,7 +113,7 @@
     <instance objName="obj_friend" x="336" y="752" name="inst_B1974BCD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_friend" x="368" y="752" name="inst_ED29D9F1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_seaweed" x="624" y="656" name="inst_4702C35A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_seaweed" x="640" y="656" name="inst_69ABBBE1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_seaweed" x="704" y="656" name="inst_69ABBBE1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_seaweed" x="656" y="656" name="inst_DA892586" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_seaweed" x="672" y="656" name="inst_C912074C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_seaweed" x="752" y="656" name="inst_898F606B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -123,10 +123,14 @@
     <instance objName="obj_parallax" x="624" y="32" name="inst_4888026F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_cube" x="-32" y="-64" name="inst_A4F940F1" locked="0" code="" scaleX="11.5" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="obj_changeRoom" x="2048" y="464" name="inst_2FCAEE55" locked="0" code="target = level1;&#xA;" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>
-    <instance objName="obj_decoBarrel" x="1008" y="160" name="inst_AB4241B9" locked="0" code="vspeed = 1;&#xA;depth = 1000000" scaleX="1" scaleY="1" colour="4294967295" rotation="30"/>
-    <instance objName="obj_decoBarrel" x="1344" y="384" name="inst_4A1BDCEC" locked="0" code="vspeed = 0.75;&#xA;depth = 1000000&#xA;" scaleX="0.75" scaleY="0.75" colour="4294967295" rotation="36"/>
-    <instance objName="obj_decoBarrel" x="752" y="384" name="inst_9208FEC6" locked="0" code="vspeed = 0.5;&#xA;depth = 1000000&#xA;" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="40"/>
-    <instance objName="obj_click" x="1088" y="960" name="inst_00846824" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_creatorPulso" x="1072" y="880" name="inst_100D662A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_creatorPulso" x="1072" y="880" name="inst_0268AFF8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_basurabrickabollado" x="256" y="48" name="inst_AD7D6471" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_seaUrchin" x="912" y="768" name="inst_0544C772" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_seaUrchin" x="960" y="768" name="inst_ADDBC5DC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_seaUrchin" x="1952" y="368" name="inst_22B4A2FB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_seaUrchin" x="1952" y="304" name="inst_20A72D22" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_click" x="1024" y="960" name="inst_C0C42483" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_tileSetCave" x="64" y="32" w="32" h="32" xo="32" yo="32" id="10000095" name="inst_3BBF4104" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

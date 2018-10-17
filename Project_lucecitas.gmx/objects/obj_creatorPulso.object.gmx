@@ -58,14 +58,19 @@ part_type_orientation(part_ring, 0, 360, irandom(360), 0, true );
             <string>///creador de pulso
 if ((mouse_check_button_pressed(mb_left)) &amp;&amp; !collision_point(mouse_x,mouse_y,obl_player1,true,false)){
    random_pulse = irandom(4);
-    if(random_pulse==0)
-        audio_play_sound(snd_pulse1, 2, false);
-    else if(random_pulse==1)
-        audio_play_sound(snd_pulse2, 2, false);
-    else if(random_pulse==2)
-        audio_play_sound(snd_pulse3, 2, false);
-    else 
-        audio_play_sound(snd_pulse4, 2, false);
+    if(random_pulse==0){
+        snd1= audio_play_sound(snd_pulse1, 2, false);
+        audio_sound_gain(snd1, 0.4, 0);}
+    else if(random_pulse==1){
+        snd2=audio_play_sound(snd_pulse2, 2, false);
+        audio_sound_gain(snd2, 0.4, 0);}
+    else if(random_pulse==2){
+        snd3=audio_play_sound(snd_pulse3, 2, false);
+        audio_sound_gain(snd3, 0.4, 0);}
+    else {
+       snd4= audio_play_sound(snd_pulse4, 2, false);
+       audio_sound_gain(snd4, 0.4, 0);
+       }
    instance_create(mouse_x,mouse_y,obj_pulse)
    part_particles_create(global.part_system_pj, mouse_x, mouse_y, part_ring, 1);
 }

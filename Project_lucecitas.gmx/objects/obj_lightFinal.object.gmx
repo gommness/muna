@@ -58,7 +58,8 @@ draw_set_alpha(1);
 global.alfa += 0.04;
 if(global.alfa == 1){
     instance_destroy();
-    room_goto(room1);
+    audio_stop_all();
+    room_goto(final);
     global.alfa = 0;
 }
 with(obj_creatorPulso) {

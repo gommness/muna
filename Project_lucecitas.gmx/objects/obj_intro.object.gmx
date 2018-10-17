@@ -32,7 +32,7 @@ alarm[0] = 2;
         </arguments>
       </action>
     </event>
-    <event eventtype="2" enumb="6">
+    <event eventtype="2" enumb="7">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -51,6 +51,32 @@ alarm[0] = 2;
             <kind>1</kind>
             <string>inst = instance_create(0,0,obj_darksquare);
 inst.target = level0;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="6">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>with(all){
+    vspeed = 5;
+}
+alarm[7] = 90;
 </string>
           </argument>
         </arguments>
@@ -128,7 +154,7 @@ alarm[5] = 21;
             <string>image_alpha -= 0.05;
 
 if(image_alpha &lt;= 0){
-    alarm[4] = 60;
+    alarm[4] = 120;
 } else 
     alarm[3] = 2;
 </string>
@@ -184,7 +210,7 @@ else
             <string>image_alpha -= 0.05;
 
 if(image_alpha &lt;= 0){
-    alarm[2] = 60;
+    alarm[2] = 120;
     sprite_index = spr_logo;
 } else
     alarm[1] = 2;

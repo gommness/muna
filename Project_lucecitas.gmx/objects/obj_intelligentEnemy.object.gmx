@@ -110,7 +110,8 @@ if (self.x &gt; obl_player1.x){
 
 ///audio
 if(abs(self.x-obl_player1.x)&lt;50){
-    audio_sound_gain(snd, 1, 0);}
+    audio_sound_gain(snd, 1, 0);
+    }
 else if (abs(self.x-obl_player1.x)&gt;50 and abs(self.x-obl_player1.x)&lt;100){
     audio_sound_gain(snd, 0.8, 0);}
 else if (abs(self.x-obl_player1.x)&gt;150 and abs(self.x-obl_player1.x)&lt;200){
