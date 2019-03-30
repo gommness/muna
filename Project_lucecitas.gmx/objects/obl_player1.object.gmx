@@ -37,7 +37,7 @@ minVel=3;
 tiempo_intro=1440 //48segs
 
 alarm[0]=alarmaMovVer;
-alarm[1] = 15 + irandom(40);
+alarm[1] = 15 + irandom(15);
 
 instance_create(0,0,obj_lightsquare);
 
@@ -242,8 +242,8 @@ audio_sound_gain(snd_fondo1,1,0)
           <argument>
             <kind>1</kind>
             <string>/// Brillos aleatorios
-instance_create(x, y, obj_shine);
-alarm[1] = 15 + irandom(40);
+instance_create(x-32+irandom(64), y-32+irandom(64), obj_shine);
+alarm[1] = 15 + irandom(15);
 </string>
           </argument>
         </arguments>

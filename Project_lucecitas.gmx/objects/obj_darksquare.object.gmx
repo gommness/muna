@@ -28,7 +28,9 @@
             <string>globalvar alfa;
 alfa = 0;
 target = room;
+fadeMusic = true;
 instance_destroy(obj_creatorPulso);
+//audio_stop_all();
 audio_stop_sound(snd_persecucion);
 audio_stop_sound(snd_chorro_burbujas);
 </string>
@@ -58,11 +60,21 @@ draw_set_alpha(global.alfa);
 draw_rectangle_colour(view_xview,view_yview,view_xview+view_wview,view_yview+view_hview, c_black, c_black, c_black, c_black ,false);
 draw_set_alpha(1);
 global.alfa += 0.04;
+if(fadeMusic == true){
+    audio_master_gain(1-alfa);
+}
 if(global.alfa == 1){
     instance_destroy();
     //room_restart();
     room_goto(target);
     global.alfa = 0;
+    if(fadeMusic == true){
+        audio_stop_all();
+        audio_master_gain(1);
+    }
+    if(global.touched)
+        audio_stop_all();
+    
 }
 
 with(obj_creatorPulso) {

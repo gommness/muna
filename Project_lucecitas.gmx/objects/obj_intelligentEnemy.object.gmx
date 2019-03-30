@@ -35,6 +35,8 @@ maxAngle = 30
 path=path_add();
 
 ///audio
+
+//if(!audio_is_playing(snd_persecucion))
 snd=audio_play_sound(snd_persecucion,5,true);
 
 
@@ -109,18 +111,19 @@ if (self.x &gt; obl_player1.x){
 }
 
 ///audio
-if(abs(self.x-obl_player1.x)&lt;50){
+
+if(distance_to_object(obl_player1)&lt;50){
     audio_sound_gain(snd, 1, 0);
     }
-else if (abs(self.x-obl_player1.x)&gt;50 and abs(self.x-obl_player1.x)&lt;100){
+else if (distance_to_object(obl_player1)&gt;50 and distance_to_object(obl_player1)&lt;100){
     audio_sound_gain(snd, 0.8, 0);}
-else if (abs(self.x-obl_player1.x)&gt;150 and abs(self.x-obl_player1.x)&lt;200){
+else if (distance_to_object(obl_player1)&gt;150 and distance_to_object(obl_player1)&lt;200){
     audio_sound_gain(snd, 0.6, 0);}
-else if (abs(self.x-obl_player1.x)&gt;200 and abs(self.x-obl_player1.x)&lt;250){
+else if (distance_to_object(obl_player1)&gt;200 and distance_to_object(obl_player1)&lt;250){
     audio_sound_gain(snd, 0.4, 0);}
-else if (abs(self.x-obl_player1.x)&gt;250 and abs(self.x-obl_player1.x)&lt;300){
+else if (distance_to_object(obl_player1)&gt;250 and distance_to_object(obl_player1)&lt;300){
     audio_sound_gain(snd, 0.2, 0);}
-else if (abs(self.x-obl_player1.x)&gt;300){
+else if (distance_to_object(obl_player1)&gt;300){
     audio_sound_gain(snd, 0.001, 0);}
 
 // Cuadrant 1
@@ -146,6 +149,29 @@ else if (self.x &gt; obl_player1.x and self.y &lt; obl_player1.y)
 }
 
 */
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="5">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>audio_pause_sound(snd_persecucion);
 </string>
           </argument>
         </arguments>

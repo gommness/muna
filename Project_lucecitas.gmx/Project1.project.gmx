@@ -75,6 +75,7 @@
     <sprite>sprites\spr_popsiabollada</sprite>
     <sprite>sprites\spr_brick</sprite>
     <sprite>sprites\spr_brickabollado</sprite>
+    <sprite>sprites\spr_skipIntro</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_seaFloor0</background>
@@ -128,6 +129,8 @@
     <object>objects\object36</object>
     <object>objects\obj_click</object>
     <object>objects\obj_end</object>
+    <object>objects\obj_globalController</object>
+    <object>objects\obj_skipIntro</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\intro</room>

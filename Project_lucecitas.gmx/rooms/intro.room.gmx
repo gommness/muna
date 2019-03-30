@@ -15,17 +15,17 @@
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
-    <isSet>0</isSet>
-    <w>0</w>
-    <h>0</h>
-    <showGrid>0</showGrid>
-    <showObjects>0</showObjects>
-    <showTiles>0</showTiles>
-    <showBackgrounds>0</showBackgrounds>
-    <showForegrounds>0</showForegrounds>
+    <isSet>-1</isSet>
+    <w>1376</w>
+    <h>744</h>
+    <showGrid>-1</showGrid>
+    <showObjects>-1</showObjects>
+    <showTiles>-1</showTiles>
+    <showBackgrounds>-1</showBackgrounds>
+    <showForegrounds>-1</showForegrounds>
     <showViews>0</showViews>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
-    <deleteUnderlyingTiles>0</deleteUnderlyingTiles>
+    <deleteUnderlyingTiles>-1</deleteUnderlyingTiles>
     <page>0</page>
     <xoffset>0</xoffset>
     <yoffset>0</yoffset>
@@ -51,7 +51,7 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="obj_intro" x="448" y="256" name="inst_90EDDD06" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_intro" x="480" y="256" name="inst_90EDDD06" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_decoBarrel" x="448" y="-304" name="inst_629133AA" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="30"/>
     <instance objName="obj_decoBarrel" x="160" y="-160" name="inst_61C9FB7C" locked="0" code="" scaleX="1" scaleY="1" colour="1694498815" rotation="30"/>
     <instance objName="obj_decoBarrel" x="736" y="-96" name="inst_A5C42641" locked="0" code="" scaleX="1" scaleY="1" colour="1694498815" rotation="30"/>
@@ -75,6 +75,8 @@
     <instance objName="obj_decoBubbles" x="80" y="-176" name="inst_8ABCAB3C" locked="0" code="" scaleX="1" scaleY="1" colour="1694498815" rotation="0"/>
     <instance objName="obj_decoBubbles" x="208" y="-464" name="inst_92783D0A" locked="0" code="depth = 100;&#xA;" scaleX="1" scaleY="1" colour="855638015" rotation="0"/>
     <instance objName="obj_decoBubbles" x="721" y="-400" name="inst_0DC4D1BF" locked="0" code="depth = 100;&#xA;" scaleX="1" scaleY="1" colour="855638015" rotation="0"/>
+    <instance objName="obj_globalController" x="32" y="16" name="inst_2876AE10" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_skipIntro" x="816" y="464" name="inst_9CEE5259" locked="0" code="target = level0;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

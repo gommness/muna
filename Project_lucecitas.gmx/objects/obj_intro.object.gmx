@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_alpha = 0;
+            <string>
+image_alpha = 0;
 alarm[0] = 2;
 </string>
           </argument>
