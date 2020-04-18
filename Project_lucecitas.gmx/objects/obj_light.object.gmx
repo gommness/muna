@@ -25,8 +25,12 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>globalvar light;
+            <string>dw = display_get_gui_width();
+dh = display_get_gui_height();
+
+globalvar light;
 light = surface_create(view_wview,view_hview);
+
 </string>
           </argument>
         </arguments>
@@ -62,7 +66,7 @@ surface_reset_target();
         </arguments>
       </action>
     </event>
-    <event eventtype="8" enumb="0">
+    <event eventtype="8" enumb="77">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -79,11 +83,13 @@ surface_reset_target();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(surface_exists(light)){
+            <string>
+if(surface_exists(light)){
     draw_set_blend_mode(bm_subtract);
-    draw_surface(light, view_xview,view_yview);
+    draw_surface_stretched(light, 0, 0,dw,dh);
     draw_set_blend_mode(bm_normal);
 }
+
 </string>
           </argument>
         </arguments>

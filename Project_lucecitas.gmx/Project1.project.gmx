@@ -85,16 +85,18 @@
     <background>background\bg_tilesetSeaFloor</background>
   </backgrounds>
   <paths name="paths"/>
+  <shaders name="shaders">
+    <shader type="GLSLES">shaders\sh_godrays.shader</shader>
+    <shader type="GLSLES">shaders\sh_underwaterDistortion.shader</shader>
+  </shaders>
   <objects name="objects">
     <object>objects\obj_creatorPulso</object>
-    <object>objects\obj_intelligentEnemy</object>
     <object>objects\obj_light</object>
     <object>objects\obj_lightContainer</object>
     <object>objects\obj_player2</object>
     <object>objects\obj_pulse</object>
     <object>objects\obj_cube</object>
     <object>objects\obj_hazard</object>
-    <object>objects\obj_movHazard</object>
     <object>objects\obj_ParticleSystem</object>
     <object>objects\obj_triangle1</object>
     <object>objects\obj_triangle2</object>
@@ -109,28 +111,35 @@
     <object>objects\obj_changeRoom</object>
     <object>objects\obj_corrientes</object>
     <object>objects\obj_partcorrientes</object>
-    <object>objects\obj_basura</object>
-    <object>objects\obj_parallax</object>
-    <object>objects\obj_badFish1</object>
-    <object>objects\obj_basuraAnillas</object>
-    <object>objects\obj_basuraBolsa</object>
     <object>objects\obj_cristal1</object>
     <object>objects\obj_cristal2</object>
     <object>objects\obj_decoBarrel</object>
     <object>objects\obj_decoBubbles</object>
     <object>objects\obj_Familia</object>
     <object>objects\obj_intro</object>
-    <object>objects\obj_lightFinal</object>
-    <object>objects\obj_seaUrchin</object>
-    <object>objects\obj_basurapopsi</object>
-    <object>objects\obj_basurapopsiabollada</object>
-    <object>objects\obj_basurabrick</object>
-    <object>objects\obj_basurabrickabollado</object>
-    <object>objects\object36</object>
     <object>objects\obj_click</object>
     <object>objects\obj_end</object>
-    <object>objects\obj_globalController</object>
     <object>objects\obj_skipIntro</object>
+    <objects name="hazards">
+      <object>objects\obj_badFish1</object>
+      <object>objects\obj_seaUrchin</object>
+      <object>objects\obj_basurabrick</object>
+      <object>objects\obj_basurapopsiabollada</object>
+      <object>objects\obj_basurabrickabollado</object>
+      <object>objects\obj_basurapopsi</object>
+      <object>objects\obj_basuraAnillas</object>
+      <object>objects\obj_basuraBolsa</object>
+      <object>objects\obj_basura</object>
+      <object>objects\obj_intelligentEnemy</object>
+      <object>objects\obj_movHazard</object>
+    </objects>
+    <objects name="abstract">
+      <object>objects\obj_shader_godray</object>
+      <object>objects\obj_shader_underwaterDistortion</object>
+      <object>objects\obj_globalController</object>
+      <object>objects\obj_lightFinal</object>
+      <object>objects\obj_parallax</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\intro</room>

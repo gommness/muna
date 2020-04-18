@@ -25,11 +25,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>parallax[0] = 0;
-
-for(var i=0; background_visible[i]; i++){
-    parallax[i] = background_x[i] / 100;
-}
+            <string>application_surface_draw_enable(false);
+u_resolution = shader_get_uniform(sh_underwaterDistortion, "iResolution");
+u_time = shader_get_uniform(sh_underwaterDistortion, "iTime");
+u_texture = shader_get_sampler_index(sh_underwaterDistortion, "tex_water");
+seconds = 0;
 </string>
           </argument>
         </arguments>
@@ -52,9 +52,64 @@ for(var i=0; background_visible[i]; i++){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>for(var i=0; background_visible[i]; i++){
-    background_x[i] = parallax[i] * view_xview;
-}
+            <string>seconds += 1/room_speed;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="4">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>
+dw = display_get_gui_width();
+dh = display_get_gui_height();
+surface_resize(application_surface,dw,dh);
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="77">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>draw_set_blend_mode(bm_normal);
+shader_set(sh_underwaterDistortion);
+shader_set_uniform_f(u_resolution, dw, dh);
+shader_set_uniform_f(u_time, seconds);
+texture_set_stage(u_texture, surface_get_texture(application_surface));
+draw_rectangle(0, 0, dw, dh, false);
+shader_reset();
+
 </string>
           </argument>
         </arguments>

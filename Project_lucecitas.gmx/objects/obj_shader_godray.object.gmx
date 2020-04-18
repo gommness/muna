@@ -25,8 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>globalvar light;
-light = surface_create(view_wview,view_hview);
+            <string>application_surface_draw_enable(false);
+u_resolution = shader_get_uniform(sh_godrays, "iResolution");
+u_time = shader_get_uniform(sh_godrays, "iTime");
+seconds = 0;
 </string>
           </argument>
         </arguments>
@@ -49,10 +51,35 @@ light = surface_create(view_wview,view_hview);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>surface_set_target(light);
-draw_set_colour(c_white);
-draw_rectangle(0,0,view_wview,view_hview,false);
-surface_reset_target();
+            <string>seconds += 1/room_speed;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="4">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>
+dw = display_get_gui_width();
+dh = display_get_gui_height();
+/*
+surface_resize(application_surface,dw,dh);
+*/
 </string>
           </argument>
         </arguments>
@@ -75,9 +102,39 @@ surface_reset_target();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_blend_mode(bm_subtract);
-draw_surface(light, view_xview,view_yview);
+            <string>//draw_surface_stretched(application_surface,0,0,view_wport,view_hport);
+//draw_surface_stretched(application_surface,0,0,app_width,app_height);
+//draw_surface(application_surface,0,0);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>shader_set(sh_godrays);
+draw_set_blend_mode(bm_add);
+shader_set_uniform_f(u_resolution, room_width, room_height);
+shader_set_uniform_f(u_time, seconds);
+draw_rectangle(0, 0, room_width, room_height, false);
 draw_set_blend_mode(bm_normal);
+shader_reset();
+
 </string>
           </argument>
         </arguments>
